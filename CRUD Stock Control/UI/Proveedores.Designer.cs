@@ -31,10 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Proveedores));
             label2 = new Label();
             label1 = new Label();
-            txtIdentificacion = new TextBox();
-            txtNombre = new TextBox();
+            txtCodigoProveedor = new TextBox();
             button1 = new Button();
             button2 = new Button();
+            label3 = new Label();
+            dgvproveedores = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvproveedores).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -57,19 +59,12 @@
             label1.TabIndex = 10;
             label1.Text = "Codigo Proveedor";
             // 
-            // txtIdentificacion
+            // txtCodigoProveedor
             // 
-            txtIdentificacion.Location = new Point(15, 112);
-            txtIdentificacion.Name = "txtIdentificacion";
-            txtIdentificacion.Size = new Size(227, 23);
-            txtIdentificacion.TabIndex = 9;
-            // 
-            // txtNombre
-            // 
-            txtNombre.Location = new Point(15, 48);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(227, 23);
-            txtNombre.TabIndex = 8;
+            txtCodigoProveedor.Location = new Point(15, 48);
+            txtCodigoProveedor.Name = "txtCodigoProveedor";
+            txtCodigoProveedor.Size = new Size(227, 23);
+            txtCodigoProveedor.TabIndex = 8;
             // 
             // button1
             // 
@@ -80,6 +75,7 @@
             button1.Size = new Size(93, 40);
             button1.TabIndex = 12;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -90,20 +86,40 @@
             button2.Size = new Size(93, 40);
             button2.TabIndex = 13;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(28, 122);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 15);
+            label3.TabIndex = 14;
+            label3.Click += label3_Click;
+            // 
+            // dgvproveedores
+            // 
+            dgvproveedores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvproveedores.Location = new Point(305, 22);
+            dgvproveedores.Name = "dgvproveedores";
+            dgvproveedores.Size = new Size(405, 182);
+            dgvproveedores.TabIndex = 15;
             // 
             // Proveedores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(254, 232);
+            ClientSize = new Size(734, 232);
+            Controls.Add(dgvproveedores);
+            Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(txtIdentificacion);
-            Controls.Add(txtNombre);
+            Controls.Add(txtCodigoProveedor);
             Name = "Proveedores";
             Text = "Proveedores";
+            ((System.ComponentModel.ISupportInitialize)dgvproveedores).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -112,9 +128,10 @@
 
         private Label label2;
         private Label label1;
-        private TextBox txtIdentificacion;
-        private TextBox txtNombre;
+        private TextBox txtCodigoProveedor;
         private Button button1;
         private Button button2;
+        private Label label3;
+        private DataGridView dgvproveedores;
     }
 }
