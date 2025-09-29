@@ -63,28 +63,25 @@ namespace CRUD_Stock_Control
 
             if (datos.Count > 0)
             {
+                // Guardamos en la tabla inicioSesion
                 controlador.RegistrarInicioSesion(usuario, contraseña);
 
-                MessageBox.Show("✅ Bienvenido " + datos["Nombre"]);
+                // ✅ Guardamos el usuario en la sesión global
+                SesionActual.Usuario = datos["Usuario"];  // 🔴 AQUÍ ERA EL CAMBIO
 
+                MessageBox.Show("✅ Bienvenido " + datos["Nombre"]);
 
                 Inventario ventanaInventario = new Inventario();
                 ventanaInventario.Show();
 
                 this.Hide();
-
             }
             else
             {
                 MessageBox.Show("❌ Usuario o contraseña incorrectos.");
             }
-
-
-
-
-
-
         }
+
 
         private void cbMostrar_CheckedChanged(object sender, EventArgs e)
         {

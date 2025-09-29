@@ -131,5 +131,7 @@ namespace CRUD_Stock_Control.Clases
 
             return guardado;
         }
+        
+
     }
 }
