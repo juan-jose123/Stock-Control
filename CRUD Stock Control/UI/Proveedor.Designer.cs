@@ -47,53 +47,59 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(12, 53);
+            txtNombre.Location = new Point(14, 71);
+            txtNombre.Margin = new Padding(3, 4, 3, 4);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(227, 23);
+            txtNombre.Size = new Size(259, 27);
             txtNombre.TabIndex = 0;
             // 
             // txtCelular
             // 
-            txtCelular.Location = new Point(12, 185);
+            txtCelular.Location = new Point(14, 247);
+            txtCelular.Margin = new Padding(3, 4, 3, 4);
             txtCelular.Name = "txtCelular";
-            txtCelular.Size = new Size(227, 23);
+            txtCelular.Size = new Size(259, 27);
             txtCelular.TabIndex = 1;
             // 
             // txtIdentificacion
             // 
-            txtIdentificacion.Location = new Point(12, 117);
+            txtIdentificacion.Location = new Point(14, 156);
+            txtIdentificacion.Margin = new Padding(3, 4, 3, 4);
             txtIdentificacion.Name = "txtIdentificacion";
-            txtIdentificacion.Size = new Size(227, 23);
+            txtIdentificacion.Size = new Size(259, 27);
             txtIdentificacion.TabIndex = 2;
             // 
             // txtDistribuye
             // 
-            txtDistribuye.Location = new Point(12, 248);
+            txtDistribuye.Location = new Point(14, 331);
+            txtDistribuye.Margin = new Padding(3, 4, 3, 4);
             txtDistribuye.Name = "txtDistribuye";
-            txtDistribuye.Size = new Size(227, 23);
+            txtDistribuye.Size = new Size(259, 27);
             txtDistribuye.TabIndex = 3;
             // 
             // txtDireccion
             // 
-            txtDireccion.Location = new Point(12, 312);
+            txtDireccion.Location = new Point(14, 416);
+            txtDireccion.Margin = new Padding(3, 4, 3, 4);
             txtDireccion.Name = "txtDireccion";
-            txtDireccion.Size = new Size(227, 23);
+            txtDireccion.Size = new Size(259, 27);
             txtDireccion.TabIndex = 4;
             // 
             // txtNota
             // 
-            txtNota.Location = new Point(12, 381);
+            txtNota.Location = new Point(14, 508);
+            txtNota.Margin = new Padding(3, 4, 3, 4);
             txtNota.Name = "txtNota";
-            txtNota.Size = new Size(227, 23);
+            txtNota.Size = new Size(259, 27);
             txtNota.TabIndex = 5;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(42, 20);
+            label1.Location = new Point(48, 27);
             label1.Name = "label1";
-            label1.Size = new Size(52, 15);
+            label1.Size = new Size(65, 20);
             label1.TabIndex = 6;
             label1.Text = "Nombre";
             // 
@@ -101,9 +107,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(42, 89);
+            label2.Location = new Point(48, 119);
             label2.Name = "label2";
-            label2.Size = new Size(142, 15);
+            label2.Size = new Size(182, 20);
             label2.TabIndex = 7;
             label2.Text = "Numero de identificacion";
             label2.Click += label2_Click;
@@ -112,9 +118,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.Location = new Point(42, 155);
+            label3.Location = new Point(48, 207);
             label3.Name = "label3";
-            label3.Size = new Size(45, 15);
+            label3.Size = new Size(55, 20);
             label3.TabIndex = 8;
             label3.Text = "Celular";
             // 
@@ -122,9 +128,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(42, 221);
+            label4.Location = new Point(48, 295);
             label4.Name = "label4";
-            label4.Size = new Size(62, 15);
+            label4.Size = new Size(79, 20);
             label4.TabIndex = 9;
             label4.Text = "Distribuye";
             // 
@@ -132,9 +138,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.Location = new Point(42, 283);
+            label5.Location = new Point(48, 377);
             label5.Name = "label5";
-            label5.Size = new Size(57, 15);
+            label5.Size = new Size(73, 20);
             label5.TabIndex = 10;
             label5.Text = "Direccion";
             // 
@@ -142,9 +148,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label6.Location = new Point(42, 352);
+            label6.Location = new Point(48, 469);
             label6.Name = "label6";
-            label6.Size = new Size(34, 15);
+            label6.Size = new Size(43, 20);
             label6.TabIndex = 11;
             label6.Text = "Nota";
             // 
@@ -152,9 +158,10 @@
             // 
             button1.FlatStyle = FlatStyle.Flat;
             button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(12, 424);
+            button1.Location = new Point(14, 565);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(100, 40);
+            button1.Size = new Size(113, 34);
             button1.TabIndex = 12;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
@@ -163,18 +170,19 @@
             // 
             btnGuardar.FlatStyle = FlatStyle.Flat;
             btnGuardar.Image = (Image)resources.GetObject("btnGuardar.Image");
-            btnGuardar.Location = new Point(139, 424);
+            btnGuardar.Location = new Point(159, 565);
+            btnGuardar.Margin = new Padding(3, 4, 3, 4);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(100, 40);
+            btnGuardar.Size = new Size(113, 34);
             btnGuardar.TabIndex = 13;
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // Proveedor
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(254, 476);
+            ClientSize = new Size(290, 635);
             Controls.Add(btnGuardar);
             Controls.Add(button1);
             Controls.Add(label6);
@@ -189,6 +197,7 @@
             Controls.Add(txtIdentificacion);
             Controls.Add(txtCelular);
             Controls.Add(txtNombre);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Proveedor";
             Text = "Proveedor";
             ResumeLayout(false);
