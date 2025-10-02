@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resgistro));
             panel1 = new Panel();
-            button1 = new Button();
             cbMostrar = new CheckBox();
             txtContraseña = new TextBox();
             txtNombre = new TextBox();
@@ -44,35 +43,17 @@
             label5 = new Label();
             button2 = new Button();
             pictureBox1 = new PictureBox();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 192, 192);
-            panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(394, 40);
             panel1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.FlatAppearance.BorderColor = Color.White;
-            button1.FlatAppearance.MouseDownBackColor = Color.White;
-            button1.FlatAppearance.MouseOverBackColor = Color.White;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(330, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(52, 25);
-            button1.TabIndex = 1;
-            button1.Text = "Cerrar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // cbMostrar
             // 
@@ -217,10 +198,8 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "Resgistro";
             Text = "Resgistro";
-            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -229,7 +208,6 @@
         #endregion
 
         private Panel panel1;
-        private Button button1;
         private CheckBox cbMostrar;
         private TextBox txtContraseña;
         private TextBox txtNombre;

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioSesion));
             panel1 = new Panel();
-            button1 = new Button();
             btnIniciarSesion = new Button();
             label1 = new Label();
             label2 = new Label();
@@ -41,36 +40,18 @@
             cbMostrar = new CheckBox();
             label4 = new Label();
             btnRegistrame = new Button();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 192, 192);
-            panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(394, 40);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
-            // 
-            // button1
-            // 
-            button1.FlatAppearance.BorderColor = Color.White;
-            button1.FlatAppearance.MouseDownBackColor = Color.White;
-            button1.FlatAppearance.MouseOverBackColor = Color.White;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(330, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(52, 25);
-            button1.TabIndex = 0;
-            button1.Text = "Cerrar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // btnIniciarSesion
             // 
@@ -136,10 +117,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Showcard Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(149, 86);
             label3.Name = "label3";
-            label3.Size = new Size(225, 33);
+            label3.Size = new Size(178, 31);
             label3.TabIndex = 7;
             label3.Text = "Stock Control";
             label3.Click += label3_Click;
@@ -193,11 +174,9 @@
             Controls.Add(label1);
             Controls.Add(btnIniciarSesion);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "InicioSesion";
             Text = "Form1";
             Load += Form1_Load;
-            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -206,7 +185,6 @@
         #endregion
 
         private Panel panel1;
-        private Button button1;
         private Button btnIniciarSesion;
         private Label label1;
         private Label label2;
