@@ -78,7 +78,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(517, 256);
+            ClientSize = new Size(513, 275);
             Controls.Add(iconButton1);
             Controls.Add(txtCerrarSesion);
             Controls.Add(dgvCuenta);

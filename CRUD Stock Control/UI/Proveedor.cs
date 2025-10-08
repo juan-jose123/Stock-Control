@@ -63,6 +63,10 @@ namespace CRUD_Stock_Control.UI
             txtNota.Text = "";
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

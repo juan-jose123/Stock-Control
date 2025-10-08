@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Proveedor));
             txtNombre = new TextBox();
             txtCelular = new TextBox();
             txtIdentificacion = new TextBox();
@@ -41,75 +40,75 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            button1 = new Button();
             btnGuardar = new Button();
             SuspendLayout();
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(14, 71);
-            txtNombre.Margin = new Padding(3, 4, 3, 4);
+            txtNombre.Location = new Point(445, 135);
+            txtNombre.Multiline = true;
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(259, 27);
+            txtNombre.Size = new Size(420, 40);
             txtNombre.TabIndex = 0;
             // 
             // txtCelular
             // 
-            txtCelular.Location = new Point(14, 247);
-            txtCelular.Margin = new Padding(3, 4, 3, 4);
+            txtCelular.Location = new Point(445, 493);
+            txtCelular.Multiline = true;
             txtCelular.Name = "txtCelular";
-            txtCelular.Size = new Size(259, 27);
+            txtCelular.Size = new Size(420, 40);
             txtCelular.TabIndex = 1;
             // 
             // txtIdentificacion
             // 
-            txtIdentificacion.Location = new Point(14, 156);
-            txtIdentificacion.Margin = new Padding(3, 4, 3, 4);
+            txtIdentificacion.Location = new Point(445, 307);
+            txtIdentificacion.Multiline = true;
             txtIdentificacion.Name = "txtIdentificacion";
-            txtIdentificacion.Size = new Size(259, 27);
+            txtIdentificacion.Size = new Size(420, 40);
             txtIdentificacion.TabIndex = 2;
             // 
             // txtDistribuye
             // 
-            txtDistribuye.Location = new Point(14, 331);
-            txtDistribuye.Margin = new Padding(3, 4, 3, 4);
+            txtDistribuye.Location = new Point(1009, 135);
+            txtDistribuye.Multiline = true;
             txtDistribuye.Name = "txtDistribuye";
-            txtDistribuye.Size = new Size(259, 27);
+            txtDistribuye.Size = new Size(420, 40);
             txtDistribuye.TabIndex = 3;
             // 
             // txtDireccion
             // 
-            txtDireccion.Location = new Point(14, 416);
-            txtDireccion.Margin = new Padding(3, 4, 3, 4);
+            txtDireccion.Location = new Point(1009, 307);
+            txtDireccion.Multiline = true;
             txtDireccion.Name = "txtDireccion";
-            txtDireccion.Size = new Size(259, 27);
+            txtDireccion.Size = new Size(420, 40);
             txtDireccion.TabIndex = 4;
             // 
             // txtNota
             // 
-            txtNota.Location = new Point(14, 508);
-            txtNota.Margin = new Padding(3, 4, 3, 4);
+            txtNota.Location = new Point(1009, 493);
+            txtNota.Multiline = true;
             txtNota.Name = "txtNota";
-            txtNota.Size = new Size(259, 27);
+            txtNota.Size = new Size(420, 40);
             txtNota.TabIndex = 5;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(48, 27);
+            label1.Font = new Font("Segoe Print", 20.25F);
+            label1.Location = new Point(445, 74);
             label1.Name = "label1";
-            label1.Size = new Size(65, 20);
+            label1.Size = new Size(129, 47);
             label1.TabIndex = 6;
             label1.Text = "Nombre";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(48, 119);
+            label2.Font = new Font("Segoe Print", 20.25F);
+            label2.Location = new Point(445, 243);
             label2.Name = "label2";
-            label2.Size = new Size(182, 20);
+            label2.Size = new Size(365, 47);
             label2.TabIndex = 7;
             label2.Text = "Numero de identificacion";
             label2.Click += label2_Click;
@@ -117,74 +116,62 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.Location = new Point(48, 207);
+            label3.Font = new Font("Segoe Print", 20.25F);
+            label3.Location = new Point(445, 415);
             label3.Name = "label3";
-            label3.Size = new Size(55, 20);
+            label3.Size = new Size(115, 47);
             label3.TabIndex = 8;
             label3.Text = "Celular";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(48, 295);
+            label4.Font = new Font("Segoe Print", 20.25F);
+            label4.Location = new Point(1009, 74);
             label4.Name = "label4";
-            label4.Size = new Size(79, 20);
+            label4.Size = new Size(157, 47);
             label4.TabIndex = 9;
             label4.Text = "Distribuye";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.Location = new Point(48, 377);
+            label5.Font = new Font("Segoe Print", 20.25F);
+            label5.Location = new Point(1009, 243);
             label5.Name = "label5";
-            label5.Size = new Size(73, 20);
+            label5.Size = new Size(146, 47);
             label5.TabIndex = 10;
             label5.Text = "Direccion";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label6.Location = new Point(48, 469);
+            label6.Font = new Font("Segoe Print", 20.25F);
+            label6.Location = new Point(998, 415);
             label6.Name = "label6";
-            label6.Size = new Size(43, 20);
+            label6.Size = new Size(86, 47);
             label6.TabIndex = 11;
             label6.Text = "Nota";
             // 
-            // button1
-            // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(14, 565);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(113, 34);
-            button1.TabIndex = 12;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
             // btnGuardar
             // 
-            btnGuardar.FlatStyle = FlatStyle.Flat;
-            btnGuardar.Image = (Image)resources.GetObject("btnGuardar.Image");
-            btnGuardar.Location = new Point(159, 565);
-            btnGuardar.Margin = new Padding(3, 4, 3, 4);
+            btnGuardar.BackColor = Color.FromArgb(192, 255, 255);
+            btnGuardar.FlatStyle = FlatStyle.Popup;
+            btnGuardar.Font = new Font("Segoe Script", 15.75F);
+            btnGuardar.Location = new Point(880, 699);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(113, 34);
+            btnGuardar.Size = new Size(179, 60);
             btnGuardar.TabIndex = 13;
-            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // Proveedor
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(290, 635);
+            ClientSize = new Size(1887, 824);
             Controls.Add(btnGuardar);
-            Controls.Add(button1);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -197,7 +184,6 @@
             Controls.Add(txtIdentificacion);
             Controls.Add(txtCelular);
             Controls.Add(txtNombre);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Proveedor";
             Text = "Proveedor";
             ResumeLayout(false);
@@ -218,7 +204,6 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private Button button1;
         private Button btnGuardar;
     }
 }

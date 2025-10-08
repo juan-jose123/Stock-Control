@@ -52,5 +52,10 @@ namespace CRUD_Stock_Control.UI
             Controller_proveedores controller = new Controller_proveedores();
             dgvproveedores.DataSource = controller.ObtenerProveedores();
         }
+
+        private void Proveedores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

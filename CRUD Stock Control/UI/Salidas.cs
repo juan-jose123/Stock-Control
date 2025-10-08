@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace CRUD_Stock_Control.UI
 {
-    public partial class Salidas : Form
+    public partial class btnSalidas : Form
     {
-        public Salidas()
+        public btnSalidas()
         {
             InitializeComponent();
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
