@@ -39,6 +39,9 @@
             txtNombreproducto = new TextBox();
             label5 = new Label();
             txtPrecio = new TextBox();
+            dataGridView1 = new DataGridView();
+            btnListaCodigos = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // btnGuardar
@@ -46,7 +49,7 @@
             btnGuardar.BackColor = Color.FromArgb(192, 255, 255);
             btnGuardar.FlatStyle = FlatStyle.Popup;
             btnGuardar.Font = new Font("Segoe Script", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnGuardar.Location = new Point(811, 703);
+            btnGuardar.Location = new Point(349, 701);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(179, 60);
             btnGuardar.TabIndex = 27;
@@ -150,11 +153,33 @@
             txtPrecio.Size = new Size(420, 40);
             txtPrecio.TabIndex = 28;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(999, 433);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(424, 240);
+            dataGridView1.TabIndex = 30;
+            // 
+            // btnListaCodigos
+            // 
+            btnListaCodigos.BackColor = Color.FromArgb(192, 255, 255);
+            btnListaCodigos.FlatStyle = FlatStyle.Popup;
+            btnListaCodigos.Font = new Font("Segoe Script", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnListaCodigos.Location = new Point(558, 701);
+            btnListaCodigos.Name = "btnListaCodigos";
+            btnListaCodigos.Size = new Size(211, 60);
+            btnListaCodigos.TabIndex = 31;
+            btnListaCodigos.Text = "Lista de codigos";
+            btnListaCodigos.UseVisualStyleBackColor = false;
+            // 
             // Producto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1887, 824);
+            Controls.Add(btnListaCodigos);
+            Controls.Add(dataGridView1);
             Controls.Add(label5);
             Controls.Add(txtPrecio);
             Controls.Add(btnGuardar);
@@ -169,6 +194,7 @@
             Name = "Producto";
             Text = "Producto";
             Load += Producto_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -186,5 +212,7 @@
         private TextBox txtNombreproducto;
         private Label label5;
         private TextBox txtPrecio;
+        private DataGridView dataGridView1;
+        private Button btnListaCodigos;
     }
 }
