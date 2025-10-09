@@ -30,10 +30,10 @@
         {
             label1 = new Label();
             btnBuscar = new Button();
-            dgvStock = new DataGridView();
+            tablaProductos = new DataGridView();
             btnCargartodo = new Button();
-            txtBuscarProducto = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dgvStock).BeginInit();
+            txtCodigoProducto = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)tablaProductos).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -57,14 +57,16 @@
             btnBuscar.TabIndex = 1;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnBuscar_Click;
             // 
-            // dgvStock
+            // tablaProductos
             // 
-            dgvStock.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvStock.Location = new Point(692, 91);
-            dgvStock.Name = "dgvStock";
-            dgvStock.Size = new Size(1087, 628);
-            dgvStock.TabIndex = 2;
+            tablaProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            tablaProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            tablaProductos.Location = new Point(692, 91);
+            tablaProductos.Name = "tablaProductos";
+            tablaProductos.Size = new Size(1087, 628);
+            tablaProductos.TabIndex = 2;
             // 
             // btnCargartodo
             // 
@@ -77,29 +79,30 @@
             btnCargartodo.TabIndex = 3;
             btnCargartodo.Text = "Cargar todo";
             btnCargartodo.UseVisualStyleBackColor = false;
+            btnCargartodo.Click += btnCargartodo_Click;
             // 
-            // txtBuscarProducto
+            // txtCodigoProducto
             // 
-            txtBuscarProducto.Font = new Font("Segoe Print", 20.25F);
-            txtBuscarProducto.Location = new Point(169, 152);
-            txtBuscarProducto.Multiline = true;
-            txtBuscarProducto.Name = "txtBuscarProducto";
-            txtBuscarProducto.Size = new Size(420, 40);
-            txtBuscarProducto.TabIndex = 4;
+            txtCodigoProducto.Font = new Font("Segoe Print", 20.25F);
+            txtCodigoProducto.Location = new Point(169, 152);
+            txtCodigoProducto.Multiline = true;
+            txtCodigoProducto.Name = "txtCodigoProducto";
+            txtCodigoProducto.Size = new Size(420, 40);
+            txtCodigoProducto.TabIndex = 4;
             // 
             // Stock
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1887, 824);
-            Controls.Add(txtBuscarProducto);
+            Controls.Add(txtCodigoProducto);
             Controls.Add(btnCargartodo);
-            Controls.Add(dgvStock);
+            Controls.Add(tablaProductos);
             Controls.Add(btnBuscar);
             Controls.Add(label1);
             Name = "Stock";
             Text = "Stock";
-            ((System.ComponentModel.ISupportInitialize)dgvStock).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tablaProductos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -108,8 +111,8 @@
 
         private Label label1;
         private Button btnBuscar;
-        private DataGridView dgvStock;
+        private DataGridView tablaProductos;
         private Button btnCargartodo;
-        private TextBox txtBuscarProducto;
+        private TextBox txtCodigoProducto;
     }
 }

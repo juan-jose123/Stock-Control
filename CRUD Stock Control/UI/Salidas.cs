@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRUD_Stock_Control.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace CRUD_Stock_Control.UI
 {
     public partial class btnSalidas : Form
     {
+        controller_Salidas controlador = new controller_Salidas();
         public btnSalidas()
         {
             InitializeComponent();
@@ -30,6 +32,22 @@ namespace CRUD_Stock_Control.UI
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSalidas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            controlador.GuardarSalida(FechaSalida, txtCodigoProducto, txtNombreProducto,
+                                       txtCantidadSalida, txtMotivo, txtPrecioUnitario, txtResponsable);
+        }
+
+        private void btnTabla_Click(object sender, EventArgs e)
+        {
+            controlador.ExportarSalidasAExcel();
         }
     }
 }

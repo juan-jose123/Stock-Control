@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 using CRUD_Stock_Control.Clases;
+using System.Data;
 
 namespace CRUD_Stock_Control.Controladores
 {
@@ -73,6 +74,32 @@ namespace CRUD_Stock_Control.Controladores
                 MessageBox.Show("Error al guardar producto: " + ex.Message);
             }
         }
+        public void MostrarCodigosEnTabla(DataGridView tabla)
+        {
+            MySqlConnection conex = cn.establecerConexion();
+            if (conex == null) return;
+
+            try
+            {
+                string consulta = "SELECT nombre_producto ,codigo_producto FROM producto";
+                MySqlCommand comando = new MySqlCommand(consulta, conex);
+                MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
+                DataTable dt = new DataTable();
+                adaptador.Fill(dt);
+
+                tabla.DataSource = dt;
+                tabla.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("❌ Error al cargar los códigos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conex.Close();
+            }
+        }
+
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRUD_Stock_Control.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,20 @@ namespace CRUD_Stock_Control.UI
 {
     public partial class Stock : Form
     {
+        private controller_Stock controller = new controller_Stock();
         public Stock()
         {
             InitializeComponent();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            controller.BuscarPorCodigo(txtCodigoProducto, tablaProductos);
+        }
+
+        private void btnCargartodo_Click(object sender, EventArgs e)
+        {
+            controller.CargarTodo(tablaProductos);
         }
     }
 }

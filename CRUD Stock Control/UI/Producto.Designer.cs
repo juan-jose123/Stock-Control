@@ -39,9 +39,9 @@
             txtNombreproducto = new TextBox();
             label5 = new Label();
             txtPrecio = new TextBox();
-            dataGridView1 = new DataGridView();
+            dataGridViewCodigos = new DataGridView();
             btnListaCodigos = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCodigos).BeginInit();
             SuspendLayout();
             // 
             // btnGuardar
@@ -153,13 +153,13 @@
             txtPrecio.Size = new Size(420, 40);
             txtPrecio.TabIndex = 28;
             // 
-            // dataGridView1
+            // dataGridViewCodigos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(999, 433);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(424, 240);
-            dataGridView1.TabIndex = 30;
+            dataGridViewCodigos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCodigos.Location = new Point(999, 433);
+            dataGridViewCodigos.Name = "dataGridViewCodigos";
+            dataGridViewCodigos.Size = new Size(424, 328);
+            dataGridViewCodigos.TabIndex = 30;
             // 
             // btnListaCodigos
             // 
@@ -172,6 +172,7 @@
             btnListaCodigos.TabIndex = 31;
             btnListaCodigos.Text = "Lista de codigos";
             btnListaCodigos.UseVisualStyleBackColor = false;
+            btnListaCodigos.Click += btnListaCodigos_Click;
             // 
             // Producto
             // 
@@ -179,7 +180,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1887, 824);
             Controls.Add(btnListaCodigos);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewCodigos);
             Controls.Add(label5);
             Controls.Add(txtPrecio);
             Controls.Add(btnGuardar);
@@ -194,7 +195,7 @@
             Name = "Producto";
             Text = "Producto";
             Load += Producto_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCodigos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -212,7 +213,7 @@
         private TextBox txtNombreproducto;
         private Label label5;
         private TextBox txtPrecio;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewCodigos;
         private Button btnListaCodigos;
     }
 }

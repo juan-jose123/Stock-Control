@@ -35,15 +35,15 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
+            txtCodigoProducto = new TextBox();
+            txtNombreProducto = new TextBox();
+            txtCantidadSalida = new TextBox();
+            txtMotivo = new TextBox();
+            txtPrecioUnitario = new TextBox();
+            txtResponsable = new TextBox();
             btnGuardar = new Button();
             btnTabla = new Button();
-            dtpFechaSalida = new DateTimePicker();
+            FechaSalida = new DateTimePicker();
             SuspendLayout();
             // 
             // label1
@@ -116,60 +116,60 @@
             label7.TabIndex = 6;
             label7.Text = "Responsable";
             // 
-            // textBox2
+            // txtCodigoProducto
             // 
-            textBox2.Font = new Font("Segoe UI", 15.75F);
-            textBox2.Location = new Point(453, 230);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(420, 40);
-            textBox2.TabIndex = 9;
+            txtCodigoProducto.Font = new Font("Segoe UI", 15.75F);
+            txtCodigoProducto.Location = new Point(453, 230);
+            txtCodigoProducto.Multiline = true;
+            txtCodigoProducto.Name = "txtCodigoProducto";
+            txtCodigoProducto.Size = new Size(420, 40);
+            txtCodigoProducto.TabIndex = 9;
             // 
-            // textBox3
+            // txtNombreProducto
             // 
-            textBox3.Font = new Font("Segoe UI", 15.75F);
-            textBox3.Location = new Point(453, 404);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(420, 40);
-            textBox3.TabIndex = 10;
+            txtNombreProducto.Font = new Font("Segoe UI", 15.75F);
+            txtNombreProducto.Location = new Point(453, 404);
+            txtNombreProducto.Multiline = true;
+            txtNombreProducto.Name = "txtNombreProducto";
+            txtNombreProducto.Size = new Size(420, 40);
+            txtNombreProducto.TabIndex = 10;
             // 
-            // textBox4
+            // txtCantidadSalida
             // 
-            textBox4.Font = new Font("Segoe UI", 15.75F);
-            textBox4.Location = new Point(453, 575);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(420, 40);
-            textBox4.TabIndex = 11;
+            txtCantidadSalida.Font = new Font("Segoe UI", 15.75F);
+            txtCantidadSalida.Location = new Point(453, 575);
+            txtCantidadSalida.Multiline = true;
+            txtCantidadSalida.Name = "txtCantidadSalida";
+            txtCantidadSalida.Size = new Size(420, 40);
+            txtCantidadSalida.TabIndex = 11;
             // 
-            // textBox5
+            // txtMotivo
             // 
-            textBox5.Font = new Font("Segoe UI", 15.75F);
-            textBox5.Location = new Point(1013, 230);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(420, 40);
-            textBox5.TabIndex = 12;
+            txtMotivo.Font = new Font("Segoe UI", 15.75F);
+            txtMotivo.Location = new Point(1013, 230);
+            txtMotivo.Multiline = true;
+            txtMotivo.Name = "txtMotivo";
+            txtMotivo.Size = new Size(420, 40);
+            txtMotivo.TabIndex = 12;
             // 
-            // textBox6
+            // txtPrecioUnitario
             // 
-            textBox6.Font = new Font("Segoe UI", 15.75F);
-            textBox6.Location = new Point(1013, 404);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(420, 40);
-            textBox6.TabIndex = 13;
-            textBox6.TextChanged += textBox6_TextChanged;
+            txtPrecioUnitario.Font = new Font("Segoe UI", 15.75F);
+            txtPrecioUnitario.Location = new Point(1013, 404);
+            txtPrecioUnitario.Multiline = true;
+            txtPrecioUnitario.Name = "txtPrecioUnitario";
+            txtPrecioUnitario.Size = new Size(420, 40);
+            txtPrecioUnitario.TabIndex = 13;
+            txtPrecioUnitario.TextChanged += textBox6_TextChanged;
             // 
-            // textBox7
+            // txtResponsable
             // 
-            textBox7.Font = new Font("Segoe UI", 15.75F);
-            textBox7.Location = new Point(1013, 575);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(420, 40);
-            textBox7.TabIndex = 14;
+            txtResponsable.Font = new Font("Segoe UI", 15.75F);
+            txtResponsable.Location = new Point(1013, 575);
+            txtResponsable.Multiline = true;
+            txtResponsable.Name = "txtResponsable";
+            txtResponsable.Size = new Size(420, 40);
+            txtResponsable.TabIndex = 14;
             // 
             // btnGuardar
             // 
@@ -182,6 +182,7 @@
             btnGuardar.TabIndex = 16;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnTabla
             // 
@@ -194,30 +195,31 @@
             btnTabla.TabIndex = 17;
             btnTabla.Text = "Salidas";
             btnTabla.UseVisualStyleBackColor = false;
+            btnTabla.Click += btnTabla_Click;
             // 
-            // dtpFechaSalida
+            // FechaSalida
             // 
-            dtpFechaSalida.CustomFormat = "yyyy-MM-dd";
-            dtpFechaSalida.Font = new Font("Segoe Print", 20.25F);
-            dtpFechaSalida.Format = DateTimePickerFormat.Custom;
-            dtpFechaSalida.Location = new Point(737, 57);
-            dtpFechaSalida.Name = "dtpFechaSalida";
-            dtpFechaSalida.Size = new Size(281, 55);
-            dtpFechaSalida.TabIndex = 18;
+            FechaSalida.CustomFormat = "yyyy-MM-dd";
+            FechaSalida.Font = new Font("Segoe Print", 20.25F);
+            FechaSalida.Format = DateTimePickerFormat.Custom;
+            FechaSalida.Location = new Point(737, 57);
+            FechaSalida.Name = "FechaSalida";
+            FechaSalida.Size = new Size(281, 55);
+            FechaSalida.TabIndex = 18;
             // 
             // btnSalidas
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1887, 824);
-            Controls.Add(dtpFechaSalida);
+            Controls.Add(FechaSalida);
             Controls.Add(btnTabla);
             Controls.Add(btnGuardar);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(txtResponsable);
+            Controls.Add(txtPrecioUnitario);
+            Controls.Add(txtMotivo);
+            Controls.Add(txtCantidadSalida);
+            Controls.Add(txtNombreProducto);
+            Controls.Add(txtCodigoProducto);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -227,6 +229,7 @@
             Controls.Add(label1);
             Name = "btnSalidas";
             Text = "Salidas";
+            Load += btnSalidas_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -240,14 +243,14 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
+        private TextBox txtCodigoProducto;
+        private TextBox txtNombreProducto;
+        private TextBox txtCantidadSalida;
+        private TextBox txtMotivo;
+        private TextBox txtPrecioUnitario;
+        private TextBox txtResponsable;
         private Button btnGuardar;
         private Button btnTabla;
-        private DateTimePicker dtpFechaSalida;
+        private DateTimePicker FechaSalida;
     }
 }

@@ -12,7 +12,9 @@ using System.Windows.Forms;
 namespace CRUD_Stock_Control.UI
 {
     public partial class Producto : Form
+
     {
+        Controller_Producto controller = new Controller_Producto();
         public Producto()
         {
             InitializeComponent();
@@ -27,41 +29,41 @@ namespace CRUD_Stock_Control.UI
         {
             try
             {
-                
+
                 Controller_Producto controller = new Controller_Producto();
 
-                
+
                 string nombre = txtNombreproducto.Text.Trim();
                 string codigoProducto = txtCodigoproducto.Text.Trim();
                 string codigoProveedor = txtCodigoproveedor.Text.Trim();
                 decimal precio;
                 int cantidad;
 
-                
+
                 if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(codigoProducto) || string.IsNullOrEmpty(codigoProveedor))
                 {
                     MessageBox.Show("Por favor complete todos los campos.");
                     return;
                 }
 
-                
+
                 if (!int.TryParse(txtCantidad.Text.Trim(), out cantidad))
                 {
                     MessageBox.Show("Ingrese un número válido en la cantidad.");
                     return;
                 }
 
-                
+
                 if (!decimal.TryParse(txtPrecio.Text.Trim(), out precio))
                 {
                     MessageBox.Show("Ingrese un número válido en el precio.");
                     return;
                 }
 
-                
+
                 controller.GuardarProducto(nombre, codigoProducto, cantidad, codigoProveedor, precio);
 
-                
+
                 txtNombreproducto.Clear();
                 txtCodigoproducto.Clear();
                 txtCantidad.Clear();
@@ -84,6 +86,11 @@ namespace CRUD_Stock_Control.UI
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnListaCodigos_Click(object sender, EventArgs e)
+        {
+            controller.MostrarCodigosEnTabla(dataGridViewCodigos);
         }
     }
 }
