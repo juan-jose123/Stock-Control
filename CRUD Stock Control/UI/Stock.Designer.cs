@@ -39,7 +39,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe Print", 20.25F);
+            label1.Font = new Font("Segoe Print", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(169, 78);
             label1.Name = "label1";
             label1.Size = new Size(295, 47);
@@ -67,6 +67,7 @@
             tablaProductos.Name = "tablaProductos";
             tablaProductos.Size = new Size(1087, 628);
             tablaProductos.TabIndex = 2;
+            tablaProductos.CellContentClick += tablaProductos_CellContentClick;
             // 
             // btnCargartodo
             // 
@@ -102,6 +103,7 @@
             Controls.Add(label1);
             Name = "Stock";
             Text = "Stock";
+            Load += Stock_Load;
             ((System.ComponentModel.ISupportInitialize)tablaProductos).EndInit();
             ResumeLayout(false);
             PerformLayout();

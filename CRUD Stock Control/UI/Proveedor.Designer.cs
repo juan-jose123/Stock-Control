@@ -45,6 +45,7 @@
             // 
             // txtNombre
             // 
+            txtNombre.Font = new Font("Segoe UI", 15.75F);
             txtNombre.Location = new Point(445, 135);
             txtNombre.Multiline = true;
             txtNombre.Name = "txtNombre";
@@ -53,6 +54,7 @@
             // 
             // txtCelular
             // 
+            txtCelular.Font = new Font("Segoe UI", 15.75F);
             txtCelular.Location = new Point(445, 493);
             txtCelular.Multiline = true;
             txtCelular.Name = "txtCelular";
@@ -61,6 +63,7 @@
             // 
             // txtIdentificacion
             // 
+            txtIdentificacion.Font = new Font("Segoe UI", 15.75F);
             txtIdentificacion.Location = new Point(445, 307);
             txtIdentificacion.Multiline = true;
             txtIdentificacion.Name = "txtIdentificacion";
@@ -69,6 +72,7 @@
             // 
             // txtDistribuye
             // 
+            txtDistribuye.Font = new Font("Segoe UI", 15.75F);
             txtDistribuye.Location = new Point(1009, 135);
             txtDistribuye.Multiline = true;
             txtDistribuye.Name = "txtDistribuye";
@@ -77,6 +81,7 @@
             // 
             // txtDireccion
             // 
+            txtDireccion.Font = new Font("Segoe UI", 15.75F);
             txtDireccion.Location = new Point(1009, 307);
             txtDireccion.Multiline = true;
             txtDireccion.Name = "txtDireccion";
@@ -85,6 +90,7 @@
             // 
             // txtNota
             // 
+            txtNota.Font = new Font("Segoe UI", 15.75F);
             txtNota.Location = new Point(1009, 493);
             txtNota.Multiline = true;
             txtNota.Name = "txtNota";

@@ -28,5 +28,15 @@ namespace CRUD_Stock_Control.UI
         {
             controller.CargarTodo(tablaProductos);
         }
+
+        private void tablaProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Stock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
