@@ -47,6 +47,7 @@
             label2.Size = new Size(169, 47);
             label2.TabIndex = 11;
             label2.Text = "Suministra";
+            label2.Click += label2_Click;
             // 
             // label1
             // 

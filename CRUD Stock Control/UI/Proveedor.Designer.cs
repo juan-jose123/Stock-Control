@@ -78,6 +78,7 @@
             txtDistribuye.Name = "txtDistribuye";
             txtDistribuye.Size = new Size(420, 40);
             txtDistribuye.TabIndex = 3;
+            txtDistribuye.TextChanged += txtDistribuye_TextChanged;
             // 
             // txtDireccion
             // 

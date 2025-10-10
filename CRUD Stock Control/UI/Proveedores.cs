@@ -57,5 +57,10 @@ namespace CRUD_Stock_Control.UI
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

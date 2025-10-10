@@ -10,7 +10,7 @@ namespace CRUD_Stock_Control.Clases
     {
         private Conexion conexionBD = new Conexion();
 
-        // ✅ Método para guardar una salida y actualizar el stock
+      
         public void GuardarSalida(DateTimePicker fechaSalida, TextBox codigoProducto, TextBox nombreProducto,
                                   TextBox cantidadSalida, TextBox motivo, TextBox precioUnitario, TextBox responsable)
         {
@@ -30,7 +30,7 @@ namespace CRUD_Stock_Control.Clases
 
             try
             {
-                // 🔹 Verificar si el producto existe
+            
                 string verificarProducto = "SELECT cantidad FROM producto WHERE codigo_producto = @codigo";
                 MySqlCommand cmdVerificar = new MySqlCommand(verificarProducto, conex);
                 cmdVerificar.Parameters.AddWithValue("@codigo", codigoProducto.Text.Trim());
@@ -45,14 +45,14 @@ namespace CRUD_Stock_Control.Clases
                 int cantidadActual = Convert.ToInt32(result);
                 int cantidadSalidaInt = Convert.ToInt32(cantidadSalida.Text.Trim());
 
-                // 🔹 Validar si hay suficiente stock
+           
                 if (cantidadSalidaInt > cantidadActual)
                 {
                     MessageBox.Show("⚠️ No hay suficiente stock disponible. Stock actual: " + cantidadActual, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // 🔹 Insertar la salida
+             
                 string consulta = @"INSERT INTO Salidas (fecha_salida, codigo_producto, nombre_producto, 
                                     cantidad_salida, motivo, precio_unitario, responsable)
                                     VALUES (@fecha, @codigo, @nombre, @cantidad, @motivo, @precio, @responsable)";
@@ -68,7 +68,7 @@ namespace CRUD_Stock_Control.Clases
 
                 comando.ExecuteNonQuery();
 
-                // 🔹 Actualizar stock en producto
+            
                 string actualizarStock = "UPDATE producto SET cantidad = cantidad - @cantidad WHERE codigo_producto = @codigo";
                 MySqlCommand cmdActualizar = new MySqlCommand(actualizarStock, conex);
                 cmdActualizar.Parameters.AddWithValue("@cantidad", cantidadSalidaInt);
@@ -87,7 +87,7 @@ namespace CRUD_Stock_Control.Clases
             }
         }
 
-        // ✅ Método para exportar todas las salidas a Excel
+     
         public void ExportarSalidasAExcel()
         {
             MySqlConnection conex = conexionBD.establecerConexion();
@@ -107,19 +107,19 @@ namespace CRUD_Stock_Control.Clases
                     return;
                 }
 
-                // Crear Excel
+                
                 Excel.Application excelApp = new Excel.Application();
                 excelApp.Workbooks.Add(Type.Missing);
                 Excel._Worksheet hoja = excelApp.ActiveSheet;
                 hoja.Name = "Salidas";
 
-                // Encabezados
+                
                 for (int i = 0; i < dt.Columns.Count; i++)
                 {
                     hoja.Cells[1, i + 1] = dt.Columns[i].ColumnName;
                 }
 
-                // Datos
+               
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     for (int j = 0; j < dt.Columns.Count; j++)
@@ -128,13 +128,13 @@ namespace CRUD_Stock_Control.Clases
                     }
                 }
 
-                // Estilo básico
+                
                 Excel.Range headerRange = hoja.Range["A1", hoja.Cells[1, dt.Columns.Count]];
                 headerRange.Font.Bold = true;
                 headerRange.Interior.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.LightGray);
                 hoja.Columns.AutoFit();
 
-                // Guardar archivo
+                
                 SaveFileDialog saveFile = new SaveFileDialog();
                 saveFile.Filter = "Archivos Excel (*.xlsx)|*.xlsx";
                 saveFile.FileName = "Reporte_Salidas_" + DateTime.Now.ToString("yyyyMMdd_HHmm") + ".xlsx";

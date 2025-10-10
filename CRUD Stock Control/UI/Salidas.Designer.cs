@@ -65,6 +65,7 @@
             label2.Size = new Size(295, 47);
             label2.TabIndex = 1;
             label2.Text = "Código del producto";
+            label2.Click += label2_Click;
             // 
             // label3
             // 

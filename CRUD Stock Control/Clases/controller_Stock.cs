@@ -9,7 +9,7 @@ namespace CRUD_Stock_Control.Clases
     {
         private Conexion conexionBD = new Conexion();
 
-        // 🔍 Buscar producto por código
+       
         public void BuscarPorCodigo(TextBox txtCodigo, DataGridView tabla)
         {
             if (string.IsNullOrWhiteSpace(txtCodigo.Text))
@@ -51,7 +51,7 @@ namespace CRUD_Stock_Control.Clases
             }
         }
 
-        // 📋 Cargar todos los productos
+      
         public void CargarTodo(DataGridView tabla)
         {
             MySqlConnection conex = conexionBD.establecerConexion();

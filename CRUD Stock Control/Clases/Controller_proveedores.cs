@@ -9,7 +9,7 @@ namespace CRUD_Stock_Control.Clases
     {
         Conexion cn = new Conexion();
 
-        // 🔹 Método para obtener todos los proveedores excepto el id_proveedor
+        
         public DataTable ObtenerProveedores()
         {
             DataTable tabla = new DataTable();
@@ -38,7 +38,7 @@ namespace CRUD_Stock_Control.Clases
             return tabla;
         }
 
-        // 🔹 Método para buscar qué suministra un proveedor según su código
+        
         public string BuscarSuministroPorCodigo(string codigoProveedor)
         {
             string suministro = "";

@@ -67,6 +67,11 @@ namespace CRUD_Stock_Control.UI
         {
 
         }
+
+        private void txtDistribuye_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
