@@ -59,7 +59,7 @@ namespace CRUD_Stock_Control.Clases
             return registrado;
         }
 
-        
+
         public Dictionary<string, string> IniciarSesion(string usuario, string contraseña)
         {
             Dictionary<string, string> datosUsuario = new Dictionary<string, string>();
@@ -84,6 +84,7 @@ namespace CRUD_Stock_Control.Clases
                             datosUsuario["Usuario"] = reader["Usuario"].ToString();
                             datosUsuario["Celular"] = reader["Celular"].ToString();
                             datosUsuario["codigoEmpleado"] = reader["codigoEmpleado"].ToString();
+                            datosUsuario["Rol"] = reader["Rol"].ToString(); // 👈 nuevo
                         }
                     }
                 }
@@ -100,7 +101,8 @@ namespace CRUD_Stock_Control.Clases
             return datosUsuario;
         }
 
-        
+
+
         public bool RegistrarInicioSesion(string usuario, string contraseña)
         {
             bool guardado = false;

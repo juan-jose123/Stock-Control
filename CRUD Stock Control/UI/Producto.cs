@@ -22,6 +22,16 @@ namespace CRUD_Stock_Control.UI
 
         private void Producto_Load(object sender, EventArgs e)
         {
+            UITheme.ApplyNeonStyle(btnGuardar);
+            UITheme.ApplySuccessStyle(btnListaCodigos);
+            
+            UITheme.ApplyTooltip(btnGuardar, "Guarda el producto en la base de datos");
+            UITheme.ApplyTooltip(btnListaCodigos, "Ver los codigos registrados en el sistema");
+
+            
+            
+
+
 
         }
 

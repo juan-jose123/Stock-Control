@@ -36,7 +36,10 @@ namespace CRUD_Stock_Control.UI
 
         private void Stock_Load(object sender, EventArgs e)
         {
-
+            UITheme.ApplyNeonStyle(btnBuscar);
+            UITheme.ApplyNeonStyle(btnCargartodo);
+            UITheme.ApplyTooltip(btnBuscar, "BUscar si hay productos disponibles");
+            UITheme.ApplyTooltip(btnCargartodo, "Cargar todos los productos");
         }
     }
 }

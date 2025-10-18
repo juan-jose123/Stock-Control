@@ -11,7 +11,8 @@ namespace CRUD_Stock_Control.Clases
         public static class SesionActual
         {
             public static string Usuario;
-        }
+            public static string Rol;
+    }
 
     
 }

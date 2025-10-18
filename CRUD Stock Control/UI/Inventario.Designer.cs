@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventario));
-            panel1 = new Panel();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -39,15 +37,6 @@
             label1 = new Label();
             panelContenedor = new Panel();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(0, 192, 192);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1904, 30);
-            panel1.TabIndex = 0;
             // 
             // button2
             // 
@@ -117,18 +106,21 @@
             // 
             // button7
             // 
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Image = (Image)resources.GetObject("button7.Image");
-            button7.Location = new Point(1807, 30);
+            button7.BackColor = Color.FromArgb(192, 255, 255);
+            button7.FlatStyle = FlatStyle.Popup;
+            button7.Font = new Font("Segoe Print", 14.25F);
+            button7.Location = new Point(1800, 42);
             button7.Name = "button7";
-            button7.Size = new Size(97, 37);
+            button7.Size = new Size(104, 47);
             button7.TabIndex = 6;
-            button7.UseVisualStyleBackColor = true;
+            button7.Text = "Cuenta";
+            button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 48F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.Location = new Point(781, 30);
             label1.Name = "label1";
@@ -150,16 +142,17 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
+            BackColor = Color.Silver;
             ClientSize = new Size(1904, 1041);
+            Controls.Add(button7);
             Controls.Add(panelContenedor);
             Controls.Add(label1);
-            Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             MinimumSize = new Size(800, 600);
             Name = "Inventario";
             Text = "Inventario";
@@ -169,8 +162,6 @@
         }
 
         #endregion
-
-        private Panel panel1;
         private Button button2;
         private Button button3;
         private Button button4;

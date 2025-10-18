@@ -84,6 +84,7 @@
             // 
             // txtCodigoProducto
             // 
+            txtCodigoProducto.BackColor = Color.WhiteSmoke;
             txtCodigoProducto.Font = new Font("Segoe Print", 20.25F);
             txtCodigoProducto.Location = new Point(169, 152);
             txtCodigoProducto.Multiline = true;
@@ -95,6 +96,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightGray;
             ClientSize = new Size(1887, 824);
             Controls.Add(txtCodigoProducto);
             Controls.Add(btnCargartodo);

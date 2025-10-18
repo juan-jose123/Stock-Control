@@ -55,7 +55,10 @@ namespace CRUD_Stock_Control.UI
 
         private void Proveedores_Load(object sender, EventArgs e)
         {
-
+            UITheme.ApplyNeonStyle(btnBuscar);
+            UITheme.ApplyNeonStyle(btnTabla);
+            UITheme.ApplyTooltip(btnBuscar, "Buscar el proveedor en la base de datos");
+            UITheme.ApplyTooltip(btnTabla, "Visualizar tabla de proveedores");
         }
 
         private void label2_Click(object sender, EventArgs e)

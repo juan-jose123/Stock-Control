@@ -177,6 +177,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightGray;
             ClientSize = new Size(1887, 824);
             Controls.Add(btnGuardar);
             Controls.Add(label6);
@@ -193,6 +194,7 @@
             Controls.Add(txtNombre);
             Name = "Proveedor";
             Text = "Proveedor";
+            Load += Proveedor_Load;
             ResumeLayout(false);
             PerformLayout();
         }

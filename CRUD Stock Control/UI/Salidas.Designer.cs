@@ -119,6 +119,7 @@
             // 
             // txtCodigoProducto
             // 
+            txtCodigoProducto.BackColor = Color.WhiteSmoke;
             txtCodigoProducto.Font = new Font("Segoe UI", 15.75F);
             txtCodigoProducto.Location = new Point(453, 230);
             txtCodigoProducto.Multiline = true;
@@ -128,6 +129,7 @@
             // 
             // txtNombreProducto
             // 
+            txtNombreProducto.BackColor = Color.WhiteSmoke;
             txtNombreProducto.Font = new Font("Segoe UI", 15.75F);
             txtNombreProducto.Location = new Point(453, 404);
             txtNombreProducto.Multiline = true;
@@ -137,6 +139,7 @@
             // 
             // txtCantidadSalida
             // 
+            txtCantidadSalida.BackColor = Color.WhiteSmoke;
             txtCantidadSalida.Font = new Font("Segoe UI", 15.75F);
             txtCantidadSalida.Location = new Point(453, 575);
             txtCantidadSalida.Multiline = true;
@@ -146,6 +149,7 @@
             // 
             // txtMotivo
             // 
+            txtMotivo.BackColor = Color.WhiteSmoke;
             txtMotivo.Font = new Font("Segoe UI", 15.75F);
             txtMotivo.Location = new Point(1013, 230);
             txtMotivo.Multiline = true;
@@ -155,6 +159,7 @@
             // 
             // txtPrecioUnitario
             // 
+            txtPrecioUnitario.BackColor = Color.WhiteSmoke;
             txtPrecioUnitario.Font = new Font("Segoe UI", 15.75F);
             txtPrecioUnitario.Location = new Point(1013, 404);
             txtPrecioUnitario.Multiline = true;
@@ -165,6 +170,7 @@
             // 
             // txtResponsable
             // 
+            txtResponsable.BackColor = Color.WhiteSmoke;
             txtResponsable.Font = new Font("Segoe UI", 15.75F);
             txtResponsable.Location = new Point(1013, 575);
             txtResponsable.Multiline = true;
@@ -194,12 +200,13 @@
             btnTabla.Name = "btnTabla";
             btnTabla.Size = new Size(179, 60);
             btnTabla.TabIndex = 17;
-            btnTabla.Text = "Salidas";
+            btnTabla.Text = "Ver historial";
             btnTabla.UseVisualStyleBackColor = false;
             btnTabla.Click += btnTabla_Click;
             // 
             // FechaSalida
             // 
+            FechaSalida.CalendarMonthBackground = Color.WhiteSmoke;
             FechaSalida.CustomFormat = "yyyy-MM-dd";
             FechaSalida.Font = new Font("Segoe Print", 20.25F);
             FechaSalida.Format = DateTimePickerFormat.Custom;
@@ -211,6 +218,7 @@
             // btnSalidas
             // 
             AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.LightGray;
             ClientSize = new Size(1887, 824);
             Controls.Add(FechaSalida);
             Controls.Add(btnTabla);

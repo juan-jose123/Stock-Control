@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             dgvCuenta = new DataGridView();
-            txtCerrarSesion = new Button();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
+            btnCerrarSesion = new Button();
+            btnVer = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)dgvCuenta).BeginInit();
             SuspendLayout();
             // 
@@ -43,47 +43,48 @@
             dgvCuenta.TabIndex = 0;
             dgvCuenta.CellContentClick += dgvCuenta_CellContentClick;
             // 
-            // txtCerrarSesion
+            // btnCerrarSesion
             // 
-            txtCerrarSesion.BackColor = Color.FromArgb(0, 192, 192);
-            txtCerrarSesion.FlatStyle = FlatStyle.Flat;
-            txtCerrarSesion.Location = new Point(351, 190);
-            txtCerrarSesion.Name = "txtCerrarSesion";
-            txtCerrarSesion.Size = new Size(130, 38);
-            txtCerrarSesion.TabIndex = 1;
-            txtCerrarSesion.Text = "Cerrar Sesion";
-            txtCerrarSesion.UseVisualStyleBackColor = false;
-            txtCerrarSesion.Click += txtCerrarSesion_Click;
+            btnCerrarSesion.BackColor = Color.FromArgb(192, 255, 255);
+            btnCerrarSesion.FlatStyle = FlatStyle.Flat;
+            btnCerrarSesion.Location = new Point(351, 190);
+            btnCerrarSesion.Name = "btnCerrarSesion";
+            btnCerrarSesion.Size = new Size(130, 38);
+            btnCerrarSesion.TabIndex = 1;
+            btnCerrarSesion.Text = "Cerrar Sesion";
+            btnCerrarSesion.UseVisualStyleBackColor = false;
+            btnCerrarSesion.Click += txtCerrarSesion_Click;
             // 
-            // iconButton1
+            // btnVer
             // 
-            iconButton1.BackColor = Color.FromArgb(0, 192, 192);
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            iconButton1.IconColor = Color.Black;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 35;
-            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton1.Location = new Point(27, 189);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(70, 36);
-            iconButton1.TabIndex = 2;
-            iconButton1.Text = "ver";
-            iconButton1.TextAlign = ContentAlignment.MiddleRight;
-            iconButton1.UseVisualStyleBackColor = false;
-            iconButton1.Click += iconButton1_Click;
+            btnVer.BackColor = Color.FromArgb(192, 255, 255);
+            btnVer.FlatStyle = FlatStyle.Popup;
+            btnVer.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnVer.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            btnVer.IconColor = Color.Black;
+            btnVer.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnVer.IconSize = 35;
+            btnVer.ImageAlign = ContentAlignment.MiddleLeft;
+            btnVer.Location = new Point(27, 189);
+            btnVer.Name = "btnVer";
+            btnVer.Size = new Size(70, 36);
+            btnVer.TabIndex = 2;
+            btnVer.Text = "ver";
+            btnVer.TextAlign = ContentAlignment.MiddleRight;
+            btnVer.UseVisualStyleBackColor = false;
+            btnVer.Click += iconButton1_Click;
             // 
             // Cuenta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(513, 275);
-            Controls.Add(iconButton1);
-            Controls.Add(txtCerrarSesion);
+            Controls.Add(btnVer);
+            Controls.Add(btnCerrarSesion);
             Controls.Add(dgvCuenta);
             Name = "Cuenta";
             Text = "Cuenta";
+            Load += Cuenta_Load_1;
             ((System.ComponentModel.ISupportInitialize)dgvCuenta).EndInit();
             ResumeLayout(false);
         }
@@ -91,7 +92,7 @@
         #endregion
 
         private DataGridView dgvCuenta;
-        private Button txtCerrarSesion;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private Button btnCerrarSesion;
+        private FontAwesome.Sharp.IconButton btnVer;
     }
 }

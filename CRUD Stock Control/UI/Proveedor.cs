@@ -72,6 +72,12 @@ namespace CRUD_Stock_Control.UI
         {
 
         }
+
+        private void Proveedor_Load(object sender, EventArgs e)
+        {
+            UITheme.ApplyNeonStyle(btnGuardar);
+            UITheme.ApplyTooltip(btnGuardar, "Guarda el producto en la base de datos");
+        }
     }
 }
 

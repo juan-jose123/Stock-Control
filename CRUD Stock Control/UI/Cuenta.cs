@@ -75,7 +75,7 @@ namespace CRUD_Stock_Control.UI
                 return;
             }
 
-            
+
             Controller_cuenta controller = new Controller_cuenta();
             bool esValida = controller.VerificarContraseña(SesionActual.Usuario, contraseñaIngresada);
 
@@ -85,11 +85,16 @@ namespace CRUD_Stock_Control.UI
                 return;
             }
 
-            
+
             dgvCuenta.DataSource = controller.ObtenerCuentaUsuario();
             dgvCuenta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
+        private void Cuenta_Load_1(object sender, EventArgs e)
+        {
+            UITheme.ApplyNeonStyle(btnCerrarSesion);
+            UITheme.ApplyNeonStyle(btnVer);
+        }
     }
 }
 

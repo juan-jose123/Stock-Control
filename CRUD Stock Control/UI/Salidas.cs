@@ -36,7 +36,10 @@ namespace CRUD_Stock_Control.UI
 
         private void btnSalidas_Load(object sender, EventArgs e)
         {
-
+            UITheme.ApplyNeonStyle(btnGuardar);
+            UITheme.ApplyNeonStyle(btnTabla);
+            UITheme.ApplyTooltip(btnGuardar, "Guardar las salidas");
+            UITheme.ApplyTooltip(btnTabla, "Visualizar las salidas ya hechas");
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

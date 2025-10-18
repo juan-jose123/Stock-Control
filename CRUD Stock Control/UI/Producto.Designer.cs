@@ -99,6 +99,7 @@
             // 
             // txtCodigoproveedor
             // 
+            txtCodigoproveedor.BackColor = Color.WhiteSmoke;
             txtCodigoproveedor.Font = new Font("Segoe UI", 15.75F);
             txtCodigoproveedor.Location = new Point(1003, 307);
             txtCodigoproveedor.Multiline = true;
@@ -108,6 +109,7 @@
             // 
             // txtCodigoproducto
             // 
+            txtCodigoproducto.BackColor = Color.WhiteSmoke;
             txtCodigoproducto.Font = new Font("Segoe UI", 15.75F);
             txtCodigoproducto.Location = new Point(349, 307);
             txtCodigoproducto.Multiline = true;
@@ -117,6 +119,7 @@
             // 
             // txtCantidad
             // 
+            txtCantidad.BackColor = Color.WhiteSmoke;
             txtCantidad.Font = new Font("Segoe UI", 15.75F);
             txtCantidad.Location = new Point(1003, 114);
             txtCantidad.Multiline = true;
@@ -126,6 +129,7 @@
             // 
             // txtNombreproducto
             // 
+            txtNombreproducto.BackColor = Color.WhiteSmoke;
             txtNombreproducto.Font = new Font("Segoe UI", 15.75F);
             txtNombreproducto.Location = new Point(349, 114);
             txtNombreproducto.Multiline = true;
@@ -146,6 +150,7 @@
             // 
             // txtPrecio
             // 
+            txtPrecio.BackColor = Color.WhiteSmoke;
             txtPrecio.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPrecio.Location = new Point(349, 514);
             txtPrecio.Multiline = true;
@@ -178,6 +183,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.Disable;
+            BackColor = Color.LightGray;
             ClientSize = new Size(1887, 824);
             Controls.Add(btnListaCodigos);
             Controls.Add(dataGridViewCodigos);

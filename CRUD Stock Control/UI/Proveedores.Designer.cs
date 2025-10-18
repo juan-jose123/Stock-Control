@@ -31,8 +31,8 @@
             label2 = new Label();
             label1 = new Label();
             txtCodigoProveedor = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            btnTabla = new Button();
+            btnBuscar = new Button();
             label3 = new Label();
             dgvproveedores = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dgvproveedores).BeginInit();
@@ -61,6 +61,7 @@
             // 
             // txtCodigoProveedor
             // 
+            txtCodigoProveedor.BackColor = Color.WhiteSmoke;
             txtCodigoProveedor.Font = new Font("Segoe UI", 15.75F);
             txtCodigoProveedor.Location = new Point(399, 107);
             txtCodigoProveedor.Multiline = true;
@@ -68,31 +69,31 @@
             txtCodigoProveedor.Size = new Size(420, 40);
             txtCodigoProveedor.TabIndex = 8;
             // 
-            // button1
+            // btnTabla
             // 
-            button1.BackColor = Color.FromArgb(192, 255, 255);
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe Script", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(389, 756);
-            button1.Name = "button1";
-            button1.Size = new Size(113, 35);
-            button1.TabIndex = 12;
-            button1.Text = "Tabla";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnTabla.BackColor = Color.FromArgb(192, 255, 255);
+            btnTabla.FlatStyle = FlatStyle.Popup;
+            btnTabla.Font = new Font("Segoe Script", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnTabla.Location = new Point(389, 737);
+            btnTabla.Name = "btnTabla";
+            btnTabla.Size = new Size(179, 60);
+            btnTabla.TabIndex = 12;
+            btnTabla.Text = "Tabla";
+            btnTabla.UseVisualStyleBackColor = false;
+            btnTabla.Click += button1_Click;
             // 
-            // button2
+            // btnBuscar
             // 
-            button2.BackColor = Color.FromArgb(192, 255, 255);
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Segoe Script", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(673, 756);
-            button2.Name = "button2";
-            button2.Size = new Size(117, 35);
-            button2.TabIndex = 13;
-            button2.Text = "Buscar";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnBuscar.BackColor = Color.FromArgb(192, 255, 255);
+            btnBuscar.FlatStyle = FlatStyle.Popup;
+            btnBuscar.Font = new Font("Segoe Script", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnBuscar.Location = new Point(674, 737);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(179, 60);
+            btnBuscar.TabIndex = 13;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += button2_Click;
             // 
             // label3
             // 
@@ -117,11 +118,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightGray;
             ClientSize = new Size(1887, 824);
             Controls.Add(dgvproveedores);
             Controls.Add(label3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnBuscar);
+            Controls.Add(btnTabla);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtCodigoProveedor);
@@ -138,8 +140,8 @@
         private Label label2;
         private Label label1;
         private TextBox txtCodigoProveedor;
-        private Button button1;
-        private Button button2;
+        private Button btnTabla;
+        private Button btnBuscar;
         private Label label3;
         private DataGridView dgvproveedores;
     }
