@@ -31,7 +31,7 @@
             btnIniciosdesesion = new Button();
             btnSalidas = new Button();
             btnUsuarios = new Button();
-            button3 = new Button();
+            btnProducto = new Button();
             btnProveedores = new Button();
             dgvAdm = new DataGridView();
             btnEliminar = new Button();
@@ -45,7 +45,7 @@
             btnIniciosdesesion.BackColor = Color.FromArgb(192, 255, 255);
             btnIniciosdesesion.FlatStyle = FlatStyle.Popup;
             btnIniciosdesesion.Font = new Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnIniciosdesesion.Location = new Point(1548, 44);
+            btnIniciosdesesion.Location = new Point(1548, 71);
             btnIniciosdesesion.Name = "btnIniciosdesesion";
             btnIniciosdesesion.Size = new Size(220, 50);
             btnIniciosdesesion.TabIndex = 10;
@@ -59,7 +59,7 @@
             btnSalidas.BackColor = Color.FromArgb(192, 255, 255);
             btnSalidas.FlatStyle = FlatStyle.Popup;
             btnSalidas.Font = new Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSalidas.Location = new Point(827, 43);
+            btnSalidas.Location = new Point(820, 71);
             btnSalidas.Name = "btnSalidas";
             btnSalidas.Size = new Size(220, 50);
             btnSalidas.TabIndex = 9;
@@ -72,7 +72,7 @@
             btnUsuarios.BackColor = Color.FromArgb(192, 255, 255);
             btnUsuarios.FlatStyle = FlatStyle.Popup;
             btnUsuarios.Font = new Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnUsuarios.Location = new Point(1188, 44);
+            btnUsuarios.Location = new Point(1188, 71);
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.Size = new Size(220, 50);
             btnUsuarios.TabIndex = 8;
@@ -80,25 +80,25 @@
             btnUsuarios.UseVisualStyleBackColor = false;
             btnUsuarios.Click += btnUsuarios_Click;
             // 
-            // button3
+            // btnProducto
             // 
-            button3.BackColor = Color.FromArgb(192, 255, 255);
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(469, 44);
-            button3.Name = "button3";
-            button3.Size = new Size(220, 50);
-            button3.TabIndex = 7;
-            button3.Text = "Producto";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click_1;
+            btnProducto.BackColor = Color.FromArgb(192, 255, 255);
+            btnProducto.FlatStyle = FlatStyle.Popup;
+            btnProducto.Font = new Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnProducto.Location = new Point(469, 71);
+            btnProducto.Name = "btnProducto";
+            btnProducto.Size = new Size(220, 50);
+            btnProducto.TabIndex = 7;
+            btnProducto.Text = "Producto";
+            btnProducto.UseVisualStyleBackColor = false;
+            btnProducto.Click += button3_Click_1;
             // 
             // btnProveedores
             // 
             btnProveedores.BackColor = Color.FromArgb(192, 255, 255);
             btnProveedores.FlatStyle = FlatStyle.Popup;
             btnProveedores.Font = new Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnProveedores.Location = new Point(107, 43);
+            btnProveedores.Location = new Point(107, 71);
             btnProveedores.Name = "btnProveedores";
             btnProveedores.Size = new Size(220, 50);
             btnProveedores.TabIndex = 6;
@@ -166,8 +166,9 @@
             Controls.Add(btnIniciosdesesion);
             Controls.Add(btnSalidas);
             Controls.Add(btnUsuarios);
-            Controls.Add(button3);
+            Controls.Add(btnProducto);
             Controls.Add(btnProveedores);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormAdmin";
             Text = "FormAdmin";
             Load += FormAdmin_Load;
@@ -180,7 +181,7 @@
         private Button btnIniciosdesesion;
         private Button btnSalidas;
         private Button btnUsuarios;
-        private Button button3;
+        private Button btnProducto;
         private Button btnProveedores;
         private DataGridView dgvAdm;
         private Button btnEliminar;

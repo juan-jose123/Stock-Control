@@ -79,7 +79,7 @@ namespace CRUD_Stock_Control.Clases
                     {
                         if (reader.Read())
                         {
-                            datosUsuario["id"] = reader["id"].ToString();
+                            datosUsuario["id"] = reader["id_inicios"].ToString();
                             datosUsuario["Nombre"] = reader["Nombre"].ToString();
                             datosUsuario["Usuario"] = reader["Usuario"].ToString();
                             datosUsuario["Celular"] = reader["Celular"].ToString();

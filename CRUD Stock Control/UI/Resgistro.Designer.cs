@@ -200,6 +200,7 @@
             Controls.Add(panel1);
             Name = "Resgistro";
             Text = "Resgistro";
+            Load += Resgistro_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

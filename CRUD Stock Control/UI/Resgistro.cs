@@ -96,6 +96,11 @@ namespace CRUD_Stock_Control
         {
 
         }
+
+        private void Resgistro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
